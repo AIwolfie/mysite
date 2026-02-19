@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AIwolfie | Offensive Security Engineer & Full Stack Developer</title>
+  <meta name="description"
+    content="Portfolio of Mayank Malaviya (AIwolfie). Specialized in Offensive Security, Recon Architecture, and AI-Driven Automation." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700;800&family=JetBrains+Mono:wght@400;700&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+  <div id="experience-container">
+    <canvas id="webgl-canvas"></canvas>
+  </div>
+
+  <div id="ui-overlay">
+    <!-- Loading Screen -->
+    <div id="loader" class="active">
+      <div class="loader-content">
+        <h1 class="glitch" data-text="AIWOLFIE SYSTEM">AIWOLFIE SYSTEM</h1>
+        <div class="progress-bar-container">
+          <div class="progress-bar"></div>
+        </div>
+        <p class="loader-status">Initializing WolfShell v3.0...</p>
+      </div>
+    </div>
+
+    <!-- Header -->
+    <header>
+      <div class="logo">AIwolfie</div>
+      <div class="identity-switch">
+        <button id="toggle-cyber" class="active">CYBER LAB</button>
+        <button id="toggle-studio">AI STUDIO</button>
+      </div>
+    </header>
+
+    <!-- Scrollable Content Layers -->
+    <div id="content-container">
+      <!-- Layer 1: Hero -->
+      <section class="content-layer active" id="layer-hero">
+        <div class="hero-content">
+          <div class="cyber-only">
+            <h1 class="glitch-text">Offensive Security Engineer</h1>
+            <h2 class="sub-headline">Bug Bounty Researcher | Recon Architect</h2>
+            <p>Exploiting vulnerabilities responsibly. Engineering intelligent security automation.</p>
+          </div>
+          <div class="studio-only hidden">
+            <h1>Full Stack Developer</h1>
+            <h2 class="sub-headline">Python Automation Engineer | AI Systems Builder</h2>
+            <p>Designing scalable systems. Building intelligent digital products.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Layer 2: Profile -->
+      <section class="content-layer" id="layer-profile">
+        <div class="profile-card glass">
+          <div class="card-header">
+            <span class="tag">0x01 // IDENTITY</span>
+            <h3>Mayank Malaviya</h3>
+          </div>
+          <div class="cyber-only">
+            <p>Offensive security researcher specializing in real-world exploitation, reconnaissance engineering, and
+              AI-driven vulnerability discovery.</p>
+            <p>Experienced in building autonomous bug bounty systems, large-scale recon automation pipelines, and
+              offensive tooling for modern web applications.</p>
+            <div class="exp-block">
+              <span class="year">2023 – Present</span>
+              <h4>Lead Security Researcher</h4>
+              <p>Developing AI-assisted offensive security frameworks using Python and automation systems.</p>
+            </div>
+          </div>
+          <div class="studio-only hidden">
+            <p>Full-stack developer focused on performance, clean architecture, and scalable automation systems.</p>
+            <p>Specialized in React interfaces, FastAPI backends, and AI-powered application workflows.</p>
+            <div class="exp-block">
+              <span class="year">2022 – Present</span>
+              <h4>Full Stack Developer</h4>
+              <p>Developing high-performance web applications and automation frameworks.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Layer 3: Skills -->
+      <section class="content-layer" id="layer-skills">
+        <div class="skills-wrapper">
+          <span class="tag">0x02 // EXPERTISE_SCAN</span>
+          <div class="cyber-only">
+            <div class="skill-category">
+              <h4>Vulnerability Research</h4>
+              <div class="skill-cloud">
+                <span>XSS</span><span>IDOR</span><span>SSRF</span><span>RCE</span><span>CSRF</span><span>Access
+                  Control</span>
+              </div>
+            </div>
+            <div class="skill-category">
+              <h4>Recon & Automation</h4>
+              <div class="skill-cloud">
+                <span>Asset Discovery</span><span>Wayback Analysis</span><span>JS Extraction</span><span>Async
+                  Python</span><span>Bash</span>
+              </div>
+            </div>
+            <div class="skill-category">
+              <h4>Mobile Security</h4>
+              <div class="skill-cloud">
+                <span>APK Static Analysis</span><span>Manifest Inspection</span><span>Permission Analysis</span>
+              </div>
+            </div>
+          </div>
+          <div class="studio-only hidden">
+            <div class="skill-category">
+              <h4>Frontend & Backend</h4>
+              <div class="skill-cloud">
+                <span>React</span><span>Next.js</span><span>Tailwind</span><span>FastAPI</span><span>AsyncIO</span><span>REST
+                  APIs</span>
+              </div>
+            </div>
+            <div class="skill-category">
+              <h4>AI & Automation</h4>
+              <div class="skill-cloud">
+                <span>Deep Learning</span><span>Prompt Engineering</span><span>Voice Synthesis</span><span>Automation
+                  Agents</span>
+              </div>
+            </div>
+            <div class="skill-category">
+              <h4>DevOps & Tools</h4>
+              <div class="skill-cloud">
+                <span>Git</span><span>Docker</span><span>Linux</span><span>Postman</span><span>CLI Tooling</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Layer 4: Tools -->
+      <section class="content-layer" id="layer-tools">
+        <div class="tools-container">
+          <span class="tag">0x03 // TOOL_ARSENAL</span>
+          <div class="cyber-only tools-grid">
+            <div class="tool-item"><span>Burp Suite</span></div>
+            <div class="tool-item"><span>Nmap</span></div>
+            <div class="tool-item"><span>Amass</span></div>
+            <div class="tool-item"><span>Subfinder</span></div>
+            <div class="tool-item"><span>FFUF</span></div>
+            <div class="tool-item"><span>Wireshark</span></div>
+            <div class="tool-item"><span>Metasploit</span></div>
+            <div class="tool-item"><span>Docker</span></div>
+          </div>
+          <div class="studio-only hidden tools-grid">
+            <div class="tool-item"><span>VS Code</span></div>
+            <div class="tool-item"><span>Python</span></div>
+            <div class="tool-item"><span>React</span></div>
+            <div class="tool-item"><span>FastAPI</span></div>
+            <div class="tool-item"><span>Tailwind</span></div>
+            <div class="tool-item"><span>Linux</span></div>
+            <div class="tool-item"><span>Postman</span></div>
+            <div class="tool-item"><span>Git</span></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Layer 5: Projects -->
+      <section class="content-layer" id="layer-projects">
+        <div class="projects-display">
+          <span class="tag">0x04 // DEPLOYED_SYSTEMS</span>
+          <div class="cyber-only project-list">
+            <div class="p-card">
+              <h5>AI Bug Bounty Agent</h5>
+              <p>Autonomous reconnaissance + vulnerability detection engine with AI-payload testing.</p>
+            </div>
+            <div class="p-card">
+              <h5>APK Vulnerability Scanner</h5>
+              <p>Single-script mobile security analyzer with automated manifest and permission analysis.</p>
+            </div>
+            <div class="p-card">
+              <h5>Recursive JS Scanner</h5>
+              <p>Crawls and analyzes JS files for real-world exploit patterns and endpoints.</p>
+            </div>
+          </div>
+          <div class="studio-only hidden project-list">
+            <div class="p-card">
+              <h5>Voice Changer AI</h5>
+              <p>Real-time AI voice synthesis system built in Flutter with audio processing.</p>
+            </div>
+            <div class="p-card">
+              <h5>AI Face Swap System</h5>
+              <p>Real-time face transformation engine using deep learning models.</p>
+            </div>
+            <div class="p-card">
+              <h5>Autonomous Security Agent</h5>
+              <p>AI-powered system capable of reconnaissance and vulnerability analysis.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Layer 6: Achievements -->
+      <section class="content-layer" id="layer-achievements">
+        <div class="achievements-card glass">
+          <span class="tag">0x05 // MILESTONES</span>
+          <div class="achievement-timeline">
+            <div class="a-item"><span>Private Bug Bounty Invitations</span></div>
+            <div class="a-item"><span>Security Research Publications</span></div>
+            <div class="a-item"><span>CTF Competition Finisher</span></div>
+            <div class="a-item"><span>OSINT Contributor</span></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Layer 7: Contact -->
+      <section class="content-layer" id="layer-contact">
+        <div class="contact-grid">
+          <div class="contact-info">
+            <span class="tag">0x06 // ESTABLISH_LINK</span>
+            <h3>Get in Touch</h3>
+            <p>Contact for collaborations, security audits, or automation projects.</p>
+            <div class="social-links">
+              <a href="https://github.com/AIwolfie" target="_blank" class="social-icon">GH</a>
+              <a href="https://www.linkedin.com/in/mayank-malaviya-69138b25a/" target="_blank"
+                class="social-icon">LI</a>
+              <a href="https://x.com" target="_blank" class="social-icon">TW</a>
+              <a href="mailto:mayankmalaviya3@gmail.com" class="social-icon">EM</a>
+            </div>
+            <div class="direct-contact">
+              <p>mayankmalaviya3@gmail.com</p>
+              <p>+91-6352191121</p>
+            </div>
+          </div>
+          <div class="contact-form glass">
+            <form id="wa-form">
+              <div class="form-group">
+                <input type="text" id="wa-name" placeholder="YOUR NAME" required>
+              </div>
+              <div class="form-group">
+                <input type="email" id="wa-email" placeholder="EMAIL ADDRESS" required>
+              </div>
+              <div class="form-group">
+                <textarea id="wa-message" placeholder="DESCRIBE YOUR REQUEST" required></textarea>
+              </div>
+              <button type="submit" class="submit-btn">SEND INITIALIZATION SIGNAL</button>
+            </form>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- HUD Elements -->
+    <div id="npc-dialogue">
+      <div class="npc-avatar">
+        <div class="npc-orb"></div>
+      </div>
+      <div class="dialogue-box">
+        <div class="npc-name">A.I.D.E.N</div>
+        <div class="npc-text">Security matrix active. Recon modules online.</div>
+      </div>
+    </div>
+
+    <div id="terminal-wrapper" class="hidden">
+      <div class="terminal-header">
+        <div class="dots"><span></span><span></span><span></span></div>
+        <div class="title">WolfShell v3.0</div>
+      </div>
+      <div id="terminal-output"></div>
+      <div class="terminal-input-line">
+        <span class="prompt">></span>
+        <input type="text" id="terminal-input" spellcheck="false" autocomplete="off">
+      </div>
+    </div>
+
+    <div id="scroll-hint">
+      <div class="mouse">
+        <div class="wheel"></div>
+      </div>
+      <span>SYSTEM NAVIGATION</span>
+    </div>
+  </div>
+  <script type="module" src="/main.js"></script>
+</body>
+
+</html>
